@@ -1,0 +1,16 @@
+# OS and Environment
+.DS_Store
+Thumbs.db
+*.log
+
+# Editor & Scratch
+.vscode/
+.idea/
+*.swp
+*.swo
+revert*.py
+scratch/
+.system_generated/
+
+# Dependencies
+node_modules/

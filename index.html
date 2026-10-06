@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ta">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="திருக்குறள் நானூற்று இருபத்து மூன்று — ஒரு படி ஒரு படியாக">
+  <title>மெய்ப்பொருள் — திருக்குறள்</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:wght@400;500;600;700;900&family=Noto+Sans+Tamil:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+  <div id="youtube-player" style="display:none;"></div>
+  <div id="route-wash" aria-hidden="true"></div>
+  <button class="sound" id="sound" aria-label="இசையைத் தொடங்கு"><i></i><i></i><i></i><span>இசையைத் தொடங்கு</span></button>
+  <nav class="rail" aria-label="கதைப் பாதை" id="rail"></nav>
+  <main id="app"></main>
+  <script src="script.js"></script>
+  <script>
+    let scrollReady = true;
+    addEventListener('wheel', function (event) {
+      if (event.deltaY <= 0 || !scrollReady) return;
+      event.preventDefault();
+      scrollReady = false;
+
+      const next = document.querySelector('#complete.show #next');
+      const storyBeat = document.querySelector('#beat-next');
+      const thought = document.querySelector('#think');
+      const investigation = document.querySelector('#investigation button:not(.on)');
+      const start = document.querySelector('#start');
+
+      if (next) next.click();
+      else if (storyBeat) storyBeat.click();
+      else if (thought) thought.click();
+      else if (investigation) investigation.click();
+      else if (start) start.click();
+
+      setTimeout(function () { scrollReady = true; }, 650);
+    }, { capture: true, passive: false });
+  </script>
+</body>
+</html>
