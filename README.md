@@ -68,14 +68,17 @@ npx serve .
 
 Open `http://localhost:3000` in your web browser.
 
+### 🌐 Live Deployment
+- **GitHub Pages**: [https://aruneshw.github.io/seven_sprints/](https://aruneshw.github.io/seven_sprints/)
+
 ---
 
 ## 👥 Team Information
 
 - **Team Name**: `zeropi`
 - **Team Members**:
-  - **HARISH RAGHAVENDRA M(7376252AL135)**
-  - **ARUNESHWARAN K(7376252AL110)**
+  - **HARISH RAGHAVENDRA M (7376252AL135)**
+  - **ARUNESHWARAN K (7376252AL110)**
 
 ---
 
@@ -86,7 +89,7 @@ This project is licensed under the **MIT License**.
 ```text
 MIT License
 
-Copyright (c) 2026 zeropi (HARISH RAGHAVENDRA M, ARUNESHWARAN K)
+Copyright (c) 2026 zeropi (HARISH RAGHAVENDRA M [7376252AL135], ARUNESHWARAN K [7376252AL110])
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
